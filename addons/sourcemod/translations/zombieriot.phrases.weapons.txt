@@ -6027,4 +6027,9 @@
 		"en"		"Bob's Sexy Gun"
 		"ko"		"밥의 섹시한 권총"
 	}
+	"Killing Order"
+	{
+		"en"		"Killing Order"
+		"ko"		"살상 명령"
+	}
 }

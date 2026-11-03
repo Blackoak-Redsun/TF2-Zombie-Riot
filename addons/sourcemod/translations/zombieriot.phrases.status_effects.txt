@@ -4188,4 +4188,14 @@
 		"en"	"Becomes a new host for The Mercenary on death."
 		"ko"	"사망 시 ''용병''의 새로운 숙주가 됩니다."
 	}
+	"Identifying Targets"
+	{
+		"en"	"Identifying Targets"
+		"ko"	"타겟 식별"
+	}
+	"Identifying Targets Desc"
+	{
+		"en"	"Increases Damage Taken by 20％"
+		"ko"	"대상이 받는 피해가 20％ 증가합니다."
+	}
 }

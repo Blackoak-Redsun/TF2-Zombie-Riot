@@ -5980,4 +5980,24 @@
 		"en"	"-Increased damage, attackspeed and resistance"
 		"ko"	"-피해량 및 공격 속도, 피해 저항 증가"
 	}
+	"Killing Order Pap 1"
+	{
+		"en"	"Change projectile to hitscan\n-Increased damage\n-Increased attackspeed"
+		"ko"	"-피해량, 공격 속도 증가\n공격 방식이 히트스캔으로 변경"
+	}
+	"Killing Order Pap 2"
+	{
+		"en"	"-Additional damage to hit target for 4 seconds\n-Increased damage\n-Increased attackspeed"
+		"ko"	"-피해량, 공격 속도 증가\n적중한 대상에게 4초 동안 추가 피해"
+	}
+	"Killing Order Pap 3"
+	{
+		"en"	"-Increased damage\n-Increased attackspeed"
+		"ko"	"-피해량, 공격 속도 증가"
+	}
+	"Killing Order Pap 4"
+	{
+		"en"	"-Increased damage\n-Increased attackspeed"
+		"ko"	"-피해량, 공격 속도 증가"
+	}
 }
