@@ -390,7 +390,7 @@ void Attributes_OnHit(int client, int victim, int weapon, float &damage, int& da
 			value = Attributes_Get(weapon, Attrib_ArmorOnHit, 0.0);
 			if(PreventSameFrameGivearmor[client] == GetGameTime())
 				value = 0.0;
-				
+			
 			if(value)
 			{
 				PreventSameFrameGivearmor[client] = GetGameTime();
@@ -399,6 +399,13 @@ void Attributes_OnHit(int client, int victim, int weapon, float &damage, int& da
 
 				float ArmorMax = Attributes_Get(weapon, Attrib_ArmorOnHitMax, 1.0);
 				GiveArmorViaPercentage(client, value / ArmorMax, ArmorMax);
+			}
+			
+			value = Attributes_Get(weapon, 795, 1.0);	// bonus damage to burning players
+			if(value >= 0.0 && value != 1.0)
+			{
+				if(IgniteFor[victim] > 0)
+					damage *= value;
 			}
 #endif
 	

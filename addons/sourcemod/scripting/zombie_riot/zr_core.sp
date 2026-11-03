@@ -770,6 +770,9 @@ char s_MissionClient[64]; // Who hired us for the current job
 #include "custom/kit_gunsaw.sp"
 #include "custom/weapon_operamute.sp"
 
+// Custom patches.
+#include "custom/addons/weapon_flare.sp"
+
 void ZR_PluginLoad()
 {
 	Natives_PluginLoad();

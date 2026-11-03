@@ -212,6 +212,11 @@ void InitStatusEffects()
 
 	DeleteStatusEffectsFromAll();
 	//clear all existing ones
+	
+#if defined ZR
+	StatusEffects_BlackOak();
+#endif
+	
 	StatusEffects_TeslarStick();
 	StatusEffects_Ludo();
 	StatusEffects_Cryo();
@@ -12360,7 +12365,26 @@ static void BlackFlames_Timer(int entity, StatusEffect Apply_MasterStatusEffect,
 	//spray particles
 }
 
-
+// We gonna insert new custom status to avoid conflict when merge patches..
+#if defined ZR
+void StatusEffects_BlackOak()
+{
+	StatusEffect data;
+	strcopy(data.BuffName, sizeof(data.BuffName), "Identifying Targets");
+	strcopy(data.HudDisplay, sizeof(data.HudDisplay), "IT");
+	strcopy(data.AboveEnemyDisplay, sizeof(data.AboveEnemyDisplay), "");
+	//-1.0 means unused
+	data.DamageTakenMulti 			= 0.2;
+	data.DamageDealMulti			= -1.0;
+	data.AttackspeedBuff			= -1.0;
+	data.MovementspeedModif			= -1.0;
+	data.Positive 					= false;
+	data.ShouldScaleWithPlayerCount	= false;
+	data.Slot						= 0;
+	data.SlotPriority				= 0;
+	StatusEffect_AddGlobal(data);
+}
+#endif
 
 void StatusEffects_NothingThere()
 {
